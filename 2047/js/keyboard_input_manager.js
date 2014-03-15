@@ -58,6 +58,28 @@ KeyboardInputManager.prototype.listen = function () {
     }
   });
 
+  function agc(c, x, y) {
+    document.querySelector(c).addEventListener("click", function () {
+      self.emit("drop", [x, y]);
+    });
+  };
+  agc(".gc00", 0, 0);
+  agc(".gc10", 1, 0);
+  agc(".gc20", 2, 0);
+  agc(".gc30", 3, 0);
+  agc(".gc01", 0, 1);
+  agc(".gc11", 1, 1);
+  agc(".gc21", 2, 1);
+  agc(".gc31", 3, 1);
+  agc(".gc02", 0, 2);
+  agc(".gc12", 1, 2);
+  agc(".gc22", 2, 2);
+  agc(".gc32", 3, 2);
+  agc(".gc03", 0, 3);
+  agc(".gc13", 1, 3);
+  agc(".gc23", 2, 3);
+  agc(".gc33", 3, 3);
+
   var retry = document.querySelector(".retry-button");
   retry.addEventListener("click", this.restart.bind(this));
   retry.addEventListener("touchend", this.restart.bind(this));
