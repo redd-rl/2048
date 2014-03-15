@@ -22,6 +22,9 @@ h1.title {
   display: block;
   float: left; }
 
+.rev{
+  transform: rotate(180deg); }
+
 @-webkit-keyframes move-up {
   0% {
     top: 25px;
@@ -75,7 +78,8 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #eee4da;
+    transform: rotate(180deg); }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -486,6 +490,9 @@ hr {
 
 .game-intro {
   margin-bottom: 0; }
+  .game-intro .intro-container {
+    display: inline-block;
+    float: left; }
 
 .game-explanation {
   margin-top: 50px; }
