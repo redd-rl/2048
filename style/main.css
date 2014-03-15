@@ -23,6 +23,10 @@ h1.title {
   float: left; }
 
 .rev{
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 @-webkit-keyframes move-up {
@@ -79,6 +83,10 @@ h1.title {
     line-height: 13px;
     text-align: center;
     color: #eee4da;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg); }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
