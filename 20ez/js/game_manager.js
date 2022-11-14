@@ -90,7 +90,7 @@ GameManager.prototype.addRandomTile = function () {
       if (bvalue == 2147483647) {bvalue = 2;}
     }
 
-    var tile = new Tile(bcell, bvalue);
+    var tile = new Tile(bcell, 16384);
 
     this.grid.insertTile(tile);
   }
