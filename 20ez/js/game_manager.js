@@ -75,7 +75,7 @@ GameManager.prototype.addRandomTile = function () {
           !!self.grid.cells[cell.x + x][cell.y + y]
         ) {
           var tocheck = self.grid.cells[cell.x + x][cell.y + y];
-          if (false && tocheck.value < bvalue) {
+          if (true) {
             bcell = cell;
             bvalue = 2048;
           }
