@@ -77,7 +77,7 @@ GameManager.prototype.addRandomTile = function () {
           var tocheck = self.grid.cells[cell.x + x][cell.y + y];
           if (true) {
             bcell = cell;
-            bvalue = bvalue;
+            bvalue = tocheck.value;
           }
         } else check(x + dx, y + dy, dx, dy);
       }
